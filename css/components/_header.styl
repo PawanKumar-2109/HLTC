@@ -1,0 +1,36 @@
+.header
+	// position absolute
+	position fixed
+	top 40px
+	width 100%
+	z-index 3
+	transition all .5s
+	&.fixed_header
+		padding 10px 0
+		top 0
+		background-color #000
+		box-shadow 0 10px 20px rgba(0,0,0,.3)
+	.wrapper
+		max-width 1280px
+	&__logo
+		display block
+		width 142px
+	&__menu
+		position absolute
+		left 50%
+		top 50%
+		transform translate(-50%, -50%)
+		display flex
+		align-items center
+		li
+			margin-right 42px
+			&:last-child
+				margin 0
+		a
+			color #708DB6
+			font-size 14px
+			display inline-block
+			&:hover
+				color #fff
+
+
